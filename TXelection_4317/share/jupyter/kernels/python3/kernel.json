@@ -1,0 +1,11 @@
+{
+ "argv": [
+  "C:/Users/twcro/Documents/GitHub/TXelection_4317/TXelection_4317\\python.exe",
+  "-m",
+  "ipykernel_launcher",
+  "-f",
+  "{connection_file}"
+ ],
+ "display_name": "Python 3",
+ "language": "python"
+}

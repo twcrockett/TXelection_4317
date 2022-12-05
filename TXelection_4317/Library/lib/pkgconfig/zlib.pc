@@ -1,0 +1,13 @@
+prefix=C:/Users/twcro/Documents/GitHub/TXelection_4317/TXelection_4317/Library
+exec_prefix=C:/Users/twcro/Documents/GitHub/TXelection_4317/TXelection_4317/Library
+libdir=C:/Users/twcro/Documents/GitHub/TXelection_4317/TXelection_4317/Library/lib
+sharedlibdir=C:/Users/twcro/Documents/GitHub/TXelection_4317/TXelection_4317/Library/lib
+includedir=C:/Users/twcro/Documents/GitHub/TXelection_4317/TXelection_4317/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.12
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

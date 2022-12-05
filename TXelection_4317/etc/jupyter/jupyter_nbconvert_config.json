@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "Exporter": {
+    "template_path": [
+      "lib\\site-packages\\jupyter_contrib_nbextensions\\templates",
+      ".",
+      "C:\\Users\\twcro\\Documents\\GitHub\\TXelection_4317\\TXelection_4317\\lib\\site-packages\\jupyter_contrib_nbextensions\\templates"
+    ],
+    "preprocessors": [
+      "jupyter_contrib_nbextensions.nbconvert_support.CodeFoldingPreprocessor",
+      "jupyter_contrib_nbextensions.nbconvert_support.PyMarkdownPreprocessor"
+    ]
+  }
+}

@@ -1,0 +1,237 @@
+/* style.css */
+
+body {
+    font-family: 'Roboto';
+    font-size: 1.0em;
+	background-color: rgb(233, 237, 242);
+	margin: 0px;
+}
+
+a {
+    color: rgb(255, 111, 111);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+div {
+	padding-left: 1%;
+	padding-right: 1%;
+	border-radius: 2px;
+	overflow: hidden;
+}
+
+.navbar {
+	width: 100%;
+	background-color: rgb(242, 246, 250);
+	opacity: 0.98;
+	border-radius: 0px;
+	position: fixed;
+	top: 0px;
+	left: 0;
+	height: 60px;
+	color: rgb(83, 89, 97);
+	padding: 0px;
+	margin: 0;
+	vertical-align: top;
+}
+
+.navbar h2 {
+	font-variant: small-caps;
+	font-size: 1.2em;
+	padding-top: 2px;
+	padding-left: 8px;
+}
+
+.navbar h3 {
+	font-size: 1.0em;
+	font-style: italic;
+	font-weight: normal;
+	color: rgb(102, 110, 120);
+	padding-top: 5px;
+}
+
+.map {
+	padding: 0px;
+	background-image: url("C:/Users/twcro/Pictures/agony.png");
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+
+.show {
+	min-width: 350px;
+	float: left;
+}
+
+.hide {
+	float: left;
+	/*display: none;*/
+}
+
+.navbar:hover + .hide {
+	display: block;
+}
+
+.row {
+	padding: 10px;
+	margin-top: 80px;
+}	
+
+.columnL {
+	float: left;
+	width: 400px;
+	padding: 10px;
+	margin-left: 10px;
+	/*border: 2px solid rgb(10, 30, 50);*/
+	background-color: rgb(242, 246, 250);
+	border-radius: 2px;
+	opacity: 0.98;
+}
+
+.columnR {
+	float: none;
+	overflow: hidden;
+	min-width: 400px;
+	padding: 10px;
+	margin-right: 10px;
+	/*border: 2px solid rgb(10, 30, 50);*/
+	background-color: rgb(242, 246, 250);
+	border-radius: 2px;
+	opacity: 0.98;
+}
+
+#infopane {
+	display: none;
+}
+
+.infopane div{
+	font-size: 0.9em;
+}
+
+h4{
+	margin: 0;
+    padding: 0;
+}
+
+h5{
+	margin: 0;
+    padding: 0;
+}
+
+.infohead{
+	float: left;
+	padding-bottom: 2%;
+	width: 50%;
+	height: 42px;
+	margin: auto;
+}
+
+.infobody{
+	float: left;
+	padding-bottom: 2%;
+	width: 50%;
+	margin: auto;
+	font-size: 0.8em;
+}
+
+
+#shift{
+	text-align: center;
+	padding: 8px 0;
+	margin: 0;
+	/*color: rgb(219, 117, 103);*/
+	color: rgb(95, 152, 227);
+}
+
+.columnpad {
+	float: left;
+	width: 0px;
+	padding: 10px;
+	/*border: 2px solid rgb(10, 30, 50);*/
+	border-radius: 2px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.title {
+	padding-top: 2px;
+}
+
+.divhead {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	font-size: 0.9em;
+	font-weight: bold;
+
+}
+
+
+.map {
+	padding-top: 2px;
+	padding-bottom: 1%;
+}
+
+.input {
+	padding-top: 1%;
+	padding-bottom: 1%;
+	font-size: 0.8em;
+}
+
+.inputspace {
+	content: '';
+	padding: 0px;
+	width: 2%;
+	float: left;
+}
+
+input[type=text] {
+	transition: width 0.4s ease-in-out;
+	border-radius: 4px;
+	border: 0px solid #ccc;
+	box-sizing: border-box;
+	padding: 1.5%;
+}
+
+input[type=text].short {
+	width: 30%;
+	float: left;
+}
+
+input[type=text].med {
+	width: 68%;
+	float: left;
+}
+
+input[type=text].long {
+	width: 100%;
+	float: left;
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: #999999;
+	color: white;
+	padding: 1.5%;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: #b5b5b5;
+}
+
+th, td {
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-left: 5px;
+}

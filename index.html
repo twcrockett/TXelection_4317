@@ -6,17 +6,122 @@
 <head>
     <meta charset="utf-8">
     <title>TXelection_4317</title>
-	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
-body {
-    font-family: 'Roboto';font-size: 22px;
-}
-</style>
+		* {
+		box-sizing: border-box;
+		}
+	</style>
+	<script type="module" src="./index.js"></script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
 </head>
 
 <body>
-<h2>2022 Texas Gubernatorial Election</h2>
-<h4>Taylor Crockett, Paulina Hruskoci, Alex Vaughn</h4>
+	<div class="map" id="map">
+		<div class="navbar">	
+				<div class="show"><h2>2022 Texas Gubernatorial Election</h2></div>
+				<div class="hide"><h3>A project by Taylor Crockett, Paulina Hruskoci, and Alex Vaughn</h3></div>
+		</div>	
+		<div class="row">
+			<div class="columnL">
+				<div class="divhead">	
+					Enter address to find voting data
+				</div>
+				
+				<hr>
+				
+				<!--218 Prairie View Ln, Royse City, TX 75189-->
+				
+				<div class="input">
+					<input class="long" type="text" id="address" name="address" placeholder="Address">
+				</div>
+				
+				<div class="input">
+					<input class="med" type="text" id="city" name="city" placeholder="City"><div class="inputspace">&nbsp;</div><input class="short" type="text" id="zip" name="zip" placeholder="Zip code">
+				</div>
+				<div class="input">   
+					<input type="submit" id="go" value="Go!" onclick="document.getElementById('infopane').style.display='block'">
+				</div>
+			</div>
+			
+			<div class="columnpad"></div>
+			
+			<div class="columnR" id="infopane" background-color="#ccc">
+				
+				<div class="infohead">
+					<h4>Rockwall County</h4>
+					<h5>Precinct 4</h5>
+				</div>
+				<div class="infohead">
+					<p id="shift">11.4% more D &#8678</p>
+				</div>
+				
+				<hr>
+				
+				<div class="infobody">
+					2018
+					<table>
+						<tr>
+							<th width="50%">Candidate</th>
+							<th>Pct.</th>
+							<th>Rcv.</th>
+						</tr>
+						<tr>
+							<td>Greg Abbott (R)</td>
+							<td>81%</td>
+							<td>1247</td>
+						</tr>
+						<tr>
+							<td>Lupe Valdez (D)</td>
+							<td>17%</td>
+							<td>269</td>
+						</tr>
+						<tr>
+							<td>Mark Tippetts (L)</td>
+							<td>1.5%</td>
+							<td>23</td>
+						</tr>
+					</table>
+				</div>
+				<div class="infobody">
+					2022
+					<table>
+						<tr>
+							<th width="50%">Candidate</th>
+							<th>Pct.</th>
+							<th>Rcv.</th>
+						</tr>
+						<tr>
+							<td>Greg Abbott (R)</td>
+							<td>71%</td>
+							<td>696</td>
+						</tr>
+						<tr>
+							<td>Beto O'Rourke (D)</td>
+							<td>28%</td>
+							<td>276</td>
+						</tr>
+						<tr>
+							<td>Mark Tippetts (L)</td>
+							<td>1.0%</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td>Delilah Barrios (G)</td>
+							<td>0.2%</td>
+							<td>2</td>
+						</tr>
+					</table>
+				</div>
+				
+			</div>
+			
+		</div>
+	<script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9wnGP1-LIa1fW10pjVAvctvKz4PAXwcA%callback=initMap&v=weekly"
+      defer
+    ></script>
+	</div>
 </body>
-
+		
 </html>

@@ -5,6 +5,8 @@ author: @Taylor Crockett
 import pandas as pd
 import numpy as np
 import os
+import js
+import asyncio
 
 directory = '_county-pbps'
 merged = pd.DataFrame()
@@ -19,8 +21,8 @@ counties = {
 
 for file in os.listdir(directory):
     filename = os.path.join(directory, file)
-    countycode = counties[file]
     if os.path.isfile(filename):
+        countycode = counties[file]
         toc = pd.read_excel(filename, sheet_name='Table of Contents', skiprows=3).set_index('Page')['Contest'].to_dict()
         sheet = 0
         for page, content in toc.items():
@@ -49,10 +51,9 @@ for file in os.listdir(directory):
 
         merged = pd.concat([merged, votes], sort=False).fillna(0)
 
-
 # ADD COLLIN
 
-cfile = 'collin_county/November 8 2022 General and Special Election Results Export.CSV'
+cfile = '_county-pbps\collin\collin.CSV'
 collin = pd.read_csv(cfile)
 collin['PRECINCT NAME'] = collin['PRECINCT NAME'].str.replace(' LB ', ' ').str.replace('PCT ', '85-')
 collin = collin.groupby('PRECINCT NAME').sum().filter(['REP', 'DEM', 'LIB', 'GRN', 'Write-in'])

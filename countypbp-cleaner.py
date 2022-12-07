@@ -5,7 +5,6 @@ author: @Taylor Crockett
 import pandas as pd
 import numpy as np
 import os
-import js
 import asyncio
 
 directory = '_county-pbps'
@@ -62,5 +61,9 @@ collin = collin.rename(
 collin.index.names = ['CC-Precinct']
 
 merged = pd.concat([merged, collin], sort=False).fillna(0)
+
+marksum = merged['Mark V Goloby'] + merged['Mark V. Goloby']
+merged['Mark V. Goloby'] = marksum
+merged.drop('Mark V Goloby', axis=1)
 
 print(merged)

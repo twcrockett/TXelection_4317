@@ -66,10 +66,12 @@ div {
 }
 
 .map img {
+	float: none;
 	flex-shrink: 0;
 	min-width: 100%;
 	min-height: 100%;
 	position: fixed;
+	overflow: hidden;
 }
 
 .show {
@@ -105,6 +107,7 @@ div {
 .columnR {
 	float: none;
 	overflow: hidden;
+	width: 600px;
 	min-width: 400px;
 	padding: 10px;
 	margin-right: 10px;
